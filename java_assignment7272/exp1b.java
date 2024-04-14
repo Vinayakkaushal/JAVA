@@ -1,0 +1,15 @@
+// Write a Java program to print Pascal's Triangle of n rows.Use nested loops to calculate the values.
+public class exp1b {
+    public static void main(String[] args) {
+        System.out.println("Name: Vinayak Kaushal\nroll no: 2210997272");
+        int n = 5;
+        for(int i = 0; i < n; i++) {
+            int num = 1;
+            for(int j = 0; j <= i; j++) {
+                System.out.print(num + " ");
+                num = num * (i - j) / (j + 1);
+            }
+            System.out.println();
+        }
+    }
+}
